@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff7ed" />
+  <title>Joe Farewell Special</title>
+  <style>
+    :root{
+      --text:#171717; --muted:#666; --line:#e7e5e4;
+      --orange:#ea580c; --violet:#6d28d9; --stone:#1c1917;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:#fafaf9;
+      line-height:1.55;
+    }
+    button{font:inherit;cursor:pointer}
+    .wrap{width:min(1080px,calc(100% - 24px));margin:0 auto;padding:24px 0 56px}
+    .hero{
+      padding:34px 28px;
+      border:1px solid var(--line);
+      border-radius:28px 28px 0 0;
+      background:linear-gradient(135deg,#fef3c7,#fff7ed 48%,#cffafe);
+    }
+    .eyebrow{font-size:12px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;color:#92400e}
+    h1{font-size:clamp(40px,7vw,72px);line-height:.98;margin:12px 0 18px;font-weight:950;letter-spacing:-.03em}
+    .hero p{font-size:18px;max-width:780px;color:#44403c;margin:0}
+    .content{
+      background:#fff;
+      border:1px solid var(--line);
+      border-top:0;
+      border-radius:0 0 28px 28px;
+      padding:26px;
+    }
+    .section-title{font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#78716c;margin-bottom:12px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .card{
+      border-radius:18px;
+      padding:18px;
+      min-height:150px;
+      border:1px solid rgba(0,0,0,.04);
+    }
+    .orange{background:#fff7ed}.sky{background:#f0f9ff}.green{background:#ecfdf5}
+    .violet{background:#f5f3ff}.amber{background:#fffbeb}.cyan{background:#ecfeff}
+    .icon{font-size:32px}.card h3{margin:8px 0 6px;font-size:18px}.card p{margin:0;color:#57534e;font-size:14px}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+    .panel{border:1px solid var(--line);border-radius:20px;padding:20px;background:#fffdf7}
+    .panel h2{margin:8px 0;font-size:22px}.panel p{margin:0;color:#57534e}
+    .btn{
+      margin-top:16px;border:0;border-radius:13px;padding:13px 16px;font-weight:850;
+      background:var(--stone);color:#fff;min-height:46px;
+    }
+    .btn.orange{background:var(--orange);color:#fff}.btn.violet{background:var(--violet);color:#fff}
+    .reveal{display:none;margin-top:14px;border-radius:13px;padding:14px;background:#fef3c7;font-weight:800}
+    .center{text-align:center}
+    .dashed{margin-top:22px;border:2px dashed #d6d3d1;border-radius:20px;padding:22px}
+    .hire{
+      margin-top:22px;
+      border-radius:22px;
+      background:#f5f3ff;
+      padding:24px;
+      text-align:center;
+    }
+    .hire h2{margin:6px 0 6px;font-size:28px}
+    .message-box{
+      margin-top:22px;border-radius:22px;background:#1c1917;color:#fff;padding:24px;
+    }
+    .message-box .small{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#a8a29e;font-weight:900}
+    .message-box h2{font-size:30px;margin:8px 0 4px}
+    .message-box .sub{color:#d6d3d1}
+    .message{display:none;margin-top:24px;padding-top:22px;border-top:1px solid #44403c;color:#e7e5e4}
+    .message p{margin:0 0 18px}
+    .message .sign{font-weight:900;color:#fff}
+    footer{text-align:center;color:#78716c;font-size:13px;padding:22px 0 0}
+    @media(max-width:800px){.grid{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}
+    @media(max-width:520px){
+      .wrap{width:min(100% - 14px,1080px);padding-top:8px}
+      .hero,.content{padding:20px}
+      .grid{grid-template-columns:1fr}
+      h1{font-size:42px}
+      .hero p{font-size:16px}
+      .message-box h2{font-size:25px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">The Joe Farewell Special 🎉</div>
+      <h1>JOE, WHAT EXACTLY<br>CAN'T YOU DO?</h1>
+      <p>Boss. Mentor. Electrician. Plumber. Gardener. iPhone dismantler. Class 4 driver. Flew an airplane before. At this point, Wen Xin is running out of professions to list. 😂</p>
+    </section>
+
+    <section class="content">
+      <div class="section-title">Joe's unofficial résumé</div>
+      <div class="grid">
+        <article class="card orange"><div class="icon">🔧</div><h3>Fix-It Joe</h3><p>If something can be dismantled, improved or repaired, somehow Joe will find it.</p></article>
+        <article class="card sky"><div class="icon">📱</div><h3>iPhone Surgeon</h3><p>Dismantled an iPhone piece by piece, then framed it like artwork. Completely normal behaviour. 😂</p></article>
+        <article class="card green"><div class="icon">🌳</div><h3>Roadside Gardener</h3><p>Planted a tree along the roadside, because apparently fixing things wasn't enough.</p></article>
+        <article class="card violet"><div class="icon">🔌🚰</div><h3>Certified Everything</h3><p>Electrician? Can. Plumbing? Also can. Boss? Obviously can.</p></article>
+        <article class="card amber"><div class="icon">🚛</div><h3>Class 4 Driver</h3><p>Normal driving licence not enough. Must unlock Class 4 also. 😂</p></article>
+        <article class="card cyan"><div class="icon">✈️</div><h3>Also Flew a Plane</h3><p>Because apparently staying on the ground was too limiting.</p></article>
+      </div>
+
+      <div class="two">
+        <article class="panel">
+          <div class="icon">🇨🇳🍽️</div>
+          <h2>Suzhou VVIP Era</h2>
+          <p>The way people welcomed Joe said everything. And yes, still the most lavish business meal Wen Xin has ever had. Thanks, Boss. 😆</p>
+        </article>
+
+        <article class="panel">
+          <div class="icon">🍺🚫</div>
+          <h2>Beer Retirement Plan</h2>
+          <p>Joe loves his beer, but health comes first now. So this is your official reminder: take care of yourself first, beer second. 😏</p>
+          <button class="btn" id="beerBtn">Check today's beer allowance 🍺</button>
+          <div class="reveal" id="beerResult">Nice try, Joe. Go drink water. 😂</div>
+        </article>
+      </div>
+
+      <div class="dashed center">
+        <h2>How many professions does Joe actually have?</h2>
+        <button class="btn orange" id="jokeBtn">Click to reveal 😂</button>
+        <div class="reveal" id="jokeResult">Current count: Boss + Mentor + Electrician + Plumber + Gardener + Handyman + iPhone Surgeon + Class 4 Driver + Pilot + Professional Improver of Random Things + at least 10 more undiscovered roles.</div>
+      </div>
+
+      <div class="hire">
+        <div class="section-title" style="color:#6d28d9">Important future business matter</div>
+        <h2>When your business huat already…</h2>
+        <p>Please remember there is one highly motivated former employee waiting for his comeback.</p>
+        <button class="btn violet" id="hireBtn">💼 HIRE WEN XIN</button>
+        <div class="reveal" id="hireResult" style="background:#fff">Application accepted. Vacancy reserved. Salary package negotiable. 😂</div>
+      </div>
+
+      <div class="message-box">
+        <div class="small">From Wen Xin</div>
+        <h2>Okay, jokes aside… ❤️</h2>
+        <div class="sub">There is actually a lot I wanted to say.</div>
+        <button class="btn" style="background:#fff;color:#1c1917" id="msgBtn">💌 Read Wen Xin's Full Message</button>
+
+        <div class="message" id="fullMessage">
+          <p><strong>Dear Joe,</strong></p>
+          <p>This is honestly one of the hardest farewell messages for me to write because I genuinely feel very sad that our time working together has come to an end so soon.</p>
+          <p>Thank you for being such an incredible boss, mentor, and more importantly, such a genuinely good person. One of the things I respect most about you is how you treat everyone with the same level of respect, regardless of position or background. You never needed to demand respect from people, you earned it through the way you treated others.</p>
+          <p>And somehow hor, you never fail to amuse me every now and then. 😂 Whether it’s your humour, cheekiness, random comments, or suddenly seeing you dismantle something because you decided it could be fixed or improved, there was always something going on.</p>
+          <p>Sometimes I really wonder what exactly you cannot do. Plumbing can, certified electrician also can, gardening also can, until you literally planted a tree along the roadside. 😂 Wherever you go, you somehow find something that can be repaired, improved, or made better. I think that says a lot about you too, you naturally leave things better than how you found them.</p>
+          <p>What impressed me even more was how people reacted to you wherever we went. Seeing the VVIP treatment you received in Suzhou, till this day still the most lavish business meal I ever had, thanks to you! How warmly your current and former colleagues greeted you, and the messages from people thanking you really showed the impact you’ve had throughout your career.</p>
+          <p>That kind of respect cannot fake one. It only comes from years of genuinely treating people well.</p>
+          <p>I’ve also always admired your patience and EQ. I honestly cannot remember seeing you truly lose your temper. Even when things get messy or frustrating, you somehow remain calm and handle things with a lot of patience. This is definitely one area where I still have a lot to learn from you.</p>
+          <p>I’m especially grateful that you gave me the trust and freedom to do my work, while still being there whenever I needed guidance. I never regretted having the opportunity to work under you. If anything, my only regret is that the time was too short, because I still feel there are so many things I haven’t learned from you yet.</p>
+          <p>I really feel very sayang that you have to go. Work will definitely feel different without you around, and I’ll miss the random conversations, jokes, stories, and little lessons along the way.</p>
+          <p>You have your own business, and I sincerely hope it continues to grow and blossom into something even bigger. After spending so many years improving other people’s businesses, maybe now it’s time to put all that experience and energy into building something truly yours.</p>
+          <p>And when the business huat already, please remember your former employee here. 😂 Hire me again o. I’m serious one, please keep one vacancy for me.</p>
+          <p>Thank you for everything — the trust, guidance, patience, opportunities, laughter, knowledge, and all the things you taught me, whether directly or indirectly.</p>
+          <p>I genuinely feel very fortunate that I had the chance to work with you.</p>
+          <p>Take good care of yourself, enjoy the next chapter, and I sincerely wish you and your business nothing but success.</p>
+          <p>And please don’t forget me when you become the big boss of your own empire. ❤️</p>
+          <p class="sign">— Wen Xin</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>Made with appreciation, laughs, and one future job application 😂</footer>
+  </main>
+
+  <script>
+    function toggleBlock(id, btn, openText, closeText){
+      const el=document.getElementById(id);
+      const open=el.style.display==="block";
+      el.style.display=open?"none":"block";
+      btn.textContent=open?openText:closeText;
+    }
+    const beerBtn=document.getElementById("beerBtn");
+    beerBtn.addEventListener("click",()=>toggleBlock("beerResult",beerBtn,"Check today's beer allowance 🍺","🍺 Allowance checked"));
+    const jokeBtn=document.getElementById("jokeBtn");
+    jokeBtn.addEventListener("click",()=>toggleBlock("jokeResult",jokeBtn,"Click to reveal 😂","Okay lah, hide again 😏"));
+    const hireBtn=document.getElementById("hireBtn");
+    hireBtn.addEventListener("click",()=>toggleBlock("hireResult",hireBtn,"💼 HIRE WEN XIN","✅ Wen Xin Applied"));
+    const msgBtn=document.getElementById("msgBtn");
+    msgBtn.addEventListener("click",()=>toggleBlock("fullMessage",msgBtn,"💌 Read Wen Xin's Full Message","❤️ Hide Wen Xin's Message"));
+  </script>
+</body>
+</html>
